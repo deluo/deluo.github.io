@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vue-router," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法 active-class 类型: string 默认值: “router-link-active”激活菜单会有一个默认的class=’router-link-active’,所以只需重写这个样式,也可以自定义该类名123let router = new Router(&amp;#123;    linkActiveClass">
+<meta name="description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法">
+<meta name="keywords" content="vue-router">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue router激活路由样式">
-<meta property="og:url" content="http://yoursite.com/2018/10/21/vue-router激活路由样式/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/08/21/vue-router激活路由样式/index.html">
 <meta property="og:site_name" content="deluo&#39;s blog">
-<meta property="og:description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法 active-class 类型: string 默认值: “router-link-active”激活菜单会有一个默认的class=’router-link-active’,所以只需重写这个样式,也可以自定义该类名123let router = new Router(&amp;#123;    linkActiveClass">
+<meta property="og:description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-21T15:35:27.386Z">
+<meta property="og:updated_time" content="2018-10-23T02:39:40.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue router激活路由样式">
-<meta name="twitter:description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法 active-class 类型: string 默认值: “router-link-active”激活菜单会有一个默认的class=’router-link-active’,所以只需重写这个样式,也可以自定义该类名123let router = new Router(&amp;#123;    linkActiveClass">
+<meta name="twitter:description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法">
 
 
 
@@ -119,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/21/vue-router激活路由样式/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/08/21/vue-router激活路由样式/"/>
 
 
 
@@ -252,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/21/vue-router激活路由样式/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/21/vue-router激活路由样式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Deluo">
@@ -281,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-10-21T22:03:44+08:00">
-                2018-10-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-21T22:03:44+08:00">
+                2018-08-21
               </time>
             
 
@@ -291,6 +292,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">web前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -319,27 +342,26 @@
       
 
       
-        <p>给当前激活的菜单添加激活的样式,在<a href="https://router.vuejs.org/zh/api/#exact" target="_blank" rel="noopener">vue-router</a>的API中已经给出解决方法</p>
+        <p>给当前激活的菜单添加激活的样式,在<a href="https://router.vuejs.org/zh/api/#exact" target="_blank" rel="noopener">vue-router</a>的API中已经给出解决方法<br><a id="more"></a></p>
 <h5 id="active-class"><a href="#active-class" class="headerlink" title="active-class"></a>active-class</h5><ul>
 <li>类型: string</li>
-<li>默认值: “router-link-active”<br>激活菜单会有一个默认的class=’router-link-active’,所以只需重写这个样式,也可以自定义该类名<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let router = new Router(&#123;</span><br><span class="line">    linkActiveClass:&apos;custom-active-class&apos;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<li>默认值: “router-link-active”<br>激活菜单会有一个默认的class=’router-link-active’,所以只需重写这个样式,也可以自定义该类名<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    linkActiveClass:<span class="string">'custom-active-class'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h5 id="exact-active-class"><a href="#exact-active-class" class="headerlink" title="exact-active-class"></a>exact-active-class</h5><ul>
 <li>类型: string</li>
-<li>默认值: “router-link-exact-active”<br>也是一个激活菜单的默认路由,但是这个class需要路由精确匹配才会添加到对应菜单上,同样可以重写这个样式,也可在路由构造函数选项中自定义该类名</li>
+<li>默认值: “router-link-exact-active”<br>也是一个激活菜单的默认路由,但是这个class需要路由精确匹配才会添加到对应菜单上,同样可以重写这个样式,也可在路由构造函数选项中自定义该类名<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    linkExactActiveClass :<span class="string">'custom-exact-active-class'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let router = new Router(&#123;</span><br><span class="line">    linkExactActiveClass :&apos;custom-exact-active-class&apos;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <h5 id="exact"><a href="#exact" class="headerlink" title="exact"></a>exact</h5><ul>
 <li>类型: boolean</li>
 <li>默认值: false<br>如果加了这个属性,则只有在路由完全匹配时才会被激活,这个属性默认false</li>
 </ul>
-<p>#####路由精确匹配<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link to=&apos;/first&apos;&gt;一级菜单&lt;/router-link&gt;</span><br><span class="line">    &lt;router-link to=&apos;/first/second1&apos;&gt;二级菜单1&lt;/router-link&gt;</span><br><span class="line">    &lt;router-link to=&apos;/first/second2&apos;&gt;二级菜单2&lt;/router-link&gt;</span><br></pre></td></tr></table></figure></p>
-<p>假定激活了二级菜单2,输出的html为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;/first&quot; class=&quot;router-link-active&quot;&gt;一级菜单&lt;/a&gt;</span><br><span class="line">    &lt;a href=&quot;/first/second1&quot; class&gt;二级菜单1&lt;/a&gt;</span><br><span class="line">    &lt;a href=&quot;/first/second2&quot; class=&quot;router-link-active router-link-exact-active&quot;&gt;二级菜单2&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
-<p><strong>当前路由为/first/second2,所以二级菜单2完全匹配,所以会添加router-link-exact-active这个类</strong></p>
-<p>如果路由是下面这样,则体现出exact这个属性的作用了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link to=&apos;/first&apos;&gt;一级菜单&lt;/router-link&gt;</span><br><span class="line">    &lt;router-link to=&apos;/first/second&apos;&gt;二级菜单1&lt;/router-link&gt;</span><br><span class="line">    &lt;router-link to=&apos;/first/second/aa&apos;&gt;二级菜单2&lt;/router-link&gt;</span><br></pre></td></tr></table></figure></p>
-<p>假定激活了二级菜单2,输出的html为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;/first&quot; class=&quot;router-link-active&quot;&gt;一级菜单&lt;/a&gt;</span><br><span class="line">    &lt;a href=&quot;/first/second&quot; class=&quot;router-link-active&quot;&gt;二级菜单1&lt;/a&gt;</span><br><span class="line">    &lt;a href=&quot;/first/second/aa&quot; class=&quot;router-link-active router-link-exact-active&quot;&gt;二级菜单2&lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
-<p>此时二级菜单1也会被添加router-link-active类,并且被激活,这个时候exact(路由精确匹配)终于有用武之地了,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link to=&apos;/first/second&apos; exact&gt;二级菜单1&lt;/router-link&gt;</span><br></pre></td></tr></table></figure></p>
+<h5 id="路由精确匹配"><a href="#路由精确匹配" class="headerlink" title="路由精确匹配"></a>路由精确匹配</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first'</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second1'</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second2'</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>假定激活了二级菜单2,输出的html为<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first"</span> <span class="attr">class</span>=<span class="string">"router-link-active"</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second1"</span> <span class="attr">class</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second2"</span> <span class="attr">class</span>=<span class="string">"router-link-active router-link-exact-active"</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>当前路由为/first/second2,所以二级菜单2完全匹配,所以会添加router-link-exact-active这个类</strong><br>如果路由是下面这样,则体现出exact这个属性的作用了<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first'</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second'</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second/aa'</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>假定激活了二级菜单2,输出的html为<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first"</span> <span class="attr">class</span>=<span class="string">"router-link-active"</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second"</span> <span class="attr">class</span>=<span class="string">"router-link-active"</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second/aa"</span> <span class="attr">class</span>=<span class="string">"router-link-active router-link-exact-active"</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>此时二级菜单1也会被添加router-link-active类,并且被激活,这个时候exact(路由精确匹配)终于有用武之地了,<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second'</span> <span class="attr">exact</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>当前路由是/first/second/aa,而二级菜单1路由为/first/second只算是部分匹配,由于exact这个属性,所以二级菜单1未激活</strong></p>
 <p>关于当前激活菜单的样式,重写router-link-active(路由部分或者完全匹配),router-link-exact-active(路由完全匹配)</p>
 
@@ -357,6 +379,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/vue-router/" rel="tag"># vue-router</a>
+          
+        </div>
+      
 
       
       
@@ -366,15 +394,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/12/HTML5-Geolocation地理定位/" rel="prev" title="HTML5 Geolocation地理定位">
+                HTML5 Geolocation地理定位 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -462,7 +490,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -492,7 +538,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#active-class"><span class="nav-number">1.</span> <span class="nav-text">active-class</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#exact-active-class"><span class="nav-number">2.</span> <span class="nav-text">exact-active-class</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#exact"><span class="nav-number">3.</span> <span class="nav-text">exact</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#active-class"><span class="nav-number">1.</span> <span class="nav-text">active-class</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#exact-active-class"><span class="nav-number">2.</span> <span class="nav-text">exact-active-class</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#exact"><span class="nav-number">3.</span> <span class="nav-text">exact</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#路由精确匹配"><span class="nav-number">4.</span> <span class="nav-text">路由精确匹配</span></a></li></ol></div>
             
 
           </div>
