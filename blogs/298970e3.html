@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="vue-router,">
+  <meta name="keywords" content="javascript,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法">
-<meta name="keywords" content="vue-router">
+<meta name="description" content="在一次遍历url参数时碰到这个问题,while中嵌套一个forEach,在需要跳出整个循环时,发现return无法跳出到最外层循环  情景再现123456789101112var arr = [1,2,3,4,5]var i =0while(i&amp;lt;2)&amp;#123;  arr.forEach((item,index)=&amp;gt;&amp;#123;    if (item &amp;gt; 2) &amp;#123;">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue router激活路由样式">
-<meta property="og:url" content="https://deluo.github.io/blogs/10099.html">
+<meta property="og:title" content="JS跳出forEach循环">
+<meta property="og:url" content="https://deluo.github.io/blogs/298970e3.html">
 <meta property="og:site_name" content="deluo&#39;s blog">
-<meta property="og:description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法">
+<meta property="og:description" content="在一次遍历url参数时碰到这个问题,while中嵌套一个forEach,在需要跳出整个循环时,发现return无法跳出到最外层循环  情景再现123456789101112var arr = [1,2,3,4,5]var i =0while(i&amp;lt;2)&amp;#123;  arr.forEach((item,index)=&amp;gt;&amp;#123;    if (item &amp;gt; 2) &amp;#123;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-01T13:09:07.672Z">
+<meta property="og:updated_time" content="2018-12-22T12:55:17.412Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue router激活路由样式">
-<meta name="twitter:description" content="给当前激活的菜单添加激活的样式,在vue-router的API中已经给出解决方法">
+<meta name="twitter:title" content="JS跳出forEach循环">
+<meta name="twitter:description" content="在一次遍历url参数时碰到这个问题,while中嵌套一个forEach,在需要跳出整个循环时,发现return无法跳出到最外层循环  情景再现123456789101112var arr = [1,2,3,4,5]var i =0while(i&amp;lt;2)&amp;#123;  arr.forEach((item,index)=&amp;gt;&amp;#123;    if (item &amp;gt; 2) &amp;#123;">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://deluo.github.io/blogs/10099.html">
+  <link rel="canonical" href="https://deluo.github.io/blogs/298970e3.html">
 
 
 
 
 
-  <title>vue router激活路由样式 | deluo's blog</title>
+  <title>JS跳出forEach循环 | deluo's blog</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://deluo.github.io/blogs/10099.html">
+    <link itemprop="mainEntityOfPage" href="https://deluo.github.io/blogs/298970e3.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Deluo">
@@ -270,7 +270,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">vue router激活路由样式</h2>
+          <h2 class="post-title" itemprop="name headline">JS跳出forEach循环</h2>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-21T22:03:44+08:00">
-                2018-08-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-22T18:24:31+08:00">
+                2018-12-22
               </time>
             
 
@@ -347,28 +347,38 @@
       
 
       
-        <p>给当前激活的菜单添加激活的样式,在<a href="https://router.vuejs.org/zh/api/#exact" target="_blank" rel="noopener">vue-router</a>的API中已经给出解决方法<br><a id="more"></a></p>
-<h5 id="active-class"><a href="#active-class" class="headerlink" title="active-class"></a>active-class</h5><ul>
-<li>类型: string</li>
-<li>默认值: “router-link-active”<br>激活菜单会有一个默认的class=’router-link-active’,所以只需重写这个样式,也可以自定义该类名<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    linkActiveClass:<span class="string">'custom-active-class'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
+        <blockquote>
+<p>在一次遍历url参数时碰到这个问题,while中嵌套一个forEach,在需要跳出整个循环时,发现return无法跳出到最外层循环</p>
+</blockquote>
+<h4 id="情景再现"><a href="#情景再现" class="headerlink" title="情景再现"></a>情景再现</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> i =<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span>(i&lt;<span class="number">2</span>)&#123;</span><br><span class="line">  arr.forEach(<span class="function">(<span class="params">item,index</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (item &gt; <span class="number">2</span>) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(item)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"index:"</span>+item)</span><br><span class="line">  &#125;)</span><br><span class="line">  i++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>打印输出:index:1 , index:2 , 3 , 4 , 5循环两次.并没有在item&gt;2的时候跳出循环,如果用for来循环就可以直接跳出while循环,所以我猜测是不是因为forEach的参数是个回调函数,而return是在函数体中用于返回值的,因此这里不能跳出任何一层循环</p>
+</blockquote>
+<p>后来我又去mdn找到 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank" rel="noopener">forEach用法</a>,其中有一段注意事项</p>
+<blockquote>
+<p>There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.<br>Early termination may be accomplished with:</p>
+<ul>
+<li>A simple loop</li>
+<li>A for…of loop</li>
+<li>Array.prototype.every()</li>
+<li>Array.prototype.some()</li>
+<li>Array.prototype.find()</li>
+<li>Array.prototype.findIndex()<br>The other Array methods: every(), some(), find(), and findIndex() test the array elements with a predicate returning a truthy value to determine if further iteration is required.</li>
 </ul>
-<h5 id="exact-active-class"><a href="#exact-active-class" class="headerlink" title="exact-active-class"></a>exact-active-class</h5><ul>
-<li>类型: string</li>
-<li>默认值: “router-link-exact-active”<br>也是一个激活菜单的默认路由,但是这个class需要路由精确匹配才会添加到对应菜单上,同样可以重写这个样式,也可在路由构造函数选项中自定义该类名<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> router = <span class="keyword">new</span> Router(&#123;</span><br><span class="line">    linkExactActiveClass :<span class="string">'custom-exact-active-class'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h5 id="exact"><a href="#exact" class="headerlink" title="exact"></a>exact</h5><ul>
-<li>类型: boolean</li>
-<li>默认值: false<br>如果加了这个属性,则只有在路由完全匹配时才会被激活,这个属性默认false</li>
-</ul>
-<h5 id="路由精确匹配"><a href="#路由精确匹配" class="headerlink" title="路由精确匹配"></a>路由精确匹配</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first'</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second1'</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second2'</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>假定激活了二级菜单2,输出的html为<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first"</span> <span class="attr">class</span>=<span class="string">"router-link-active"</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second1"</span> <span class="attr">class</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second2"</span> <span class="attr">class</span>=<span class="string">"router-link-active router-link-exact-active"</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>当前路由为/first/second2,所以二级菜单2完全匹配,所以会添加router-link-exact-active这个类</strong><br>如果路由是下面这样,则体现出exact这个属性的作用了<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first'</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second'</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second/aa'</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>假定激活了二级菜单2,输出的html为<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first"</span> <span class="attr">class</span>=<span class="string">"router-link-active"</span>&gt;</span>一级菜单<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second"</span> <span class="attr">class</span>=<span class="string">"router-link-active"</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"/first/second/aa"</span> <span class="attr">class</span>=<span class="string">"router-link-active router-link-exact-active"</span>&gt;</span>二级菜单2<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>此时二级菜单1也会被添加router-link-active类,并且被激活,这个时候exact(路由精确匹配)终于有用武之地了,<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">'/first/second'</span> <span class="attr">exact</span>&gt;</span>二级菜单1<span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>当前路由是/first/second/aa,而二级菜单1路由为/first/second只算是部分匹配,由于exact这个属性,所以二级菜单1未激活</strong></p>
-<p>关于当前激活菜单的样式,重写router-link-active(路由部分或者完全匹配),router-link-exact-active(路由完全匹配)</p>
+</blockquote>
+<p>简单说就是,forEach()没有办法停止或者跳出循环,如果有那就是在循环体内抛出一个异常,如果你真的打算用抛出异常的方式来跳出循环,兄弟你可能找错方法了,请参考下面那几个方法( every(), some(), find(), and findIndex()),可能是你要找的.</p>
+<p>想要试一下抛出异常是否可以凑效<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> i =<span class="number">0</span></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">while</span>(i&lt;<span class="number">2</span>)&#123;</span><br><span class="line">    arr.forEach(<span class="function">(<span class="params">item,index</span>)=&gt;</span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (item === <span class="number">3</span>) &#123;</span><br><span class="line">          <span class="built_in">console</span>.log(item)</span><br><span class="line">          <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">"need to break!"</span>);</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">"xx+"</span>+item)</span><br><span class="line">    &#125;)</span><br><span class="line">    i++</span><br><span class="line">  &#125;</span><br><span class="line">&#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"抓住了错误:"</span>+error)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>打印输出:xx+1 , xx+2 , 3 ,抓住了错误:Error: need to break!<br>确实跳出了循环</p>
+</blockquote>
+<p>尝试使用了some()方法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line"><span class="keyword">var</span> i =<span class="number">0</span></span><br><span class="line"><span class="keyword">while</span>(i&lt;<span class="number">2</span>)&#123;</span><br><span class="line">  arr.some(<span class="function">(<span class="params">item,index</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">"index:"</span>+item)</span><br><span class="line">    <span class="keyword">return</span> item &gt;<span class="number">2</span></span><br><span class="line">  &#125;)</span><br><span class="line">  i++</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>打印输出:index:1,index:2,index:3,index:1,index:2,index:3<br>结果证明跳出了内层循环,并没有跳出while外层循环</p>
+</blockquote>
+<p>到这里似乎是推翻了之前我的猜测,因为some()方法的参数也是个回调函数,但是它就是可以跳出循环.后来使用了filter(并不在上面推荐的方法中),结果是依然不能跳出循环体.</p>
+<blockquote>
+<p>到最后也没明白为什么forEach()为什么不能跳出循环,some()这些就可以,话说回来使用原生for循环直接跳出while循环这才是我最需要的.先留个坑,后面再填!!!</p>
+</blockquote>
 
       
     </div>
@@ -386,7 +396,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/vue-router/" rel="tag"># vue-router</a>
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
           
         </div>
       
@@ -399,8 +409,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blogs/904701e.html" rel="next" title="css两种盒模型">
-                <i class="fa fa-chevron-left"></i> css两种盒模型
+              <a href="/blogs/d6340cb9.html" rel="next" title="promise迷你书 读书笔记">
+                <i class="fa fa-chevron-left"></i> promise迷你书 读书笔记
               </a>
             
           </div>
@@ -408,10 +418,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blogs/40820.html" rel="prev" title="CORS跨域问题和解决方法">
-                CORS跨域问题和解决方法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -545,7 +551,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#active-class"><span class="nav-number">1.</span> <span class="nav-text">active-class</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#exact-active-class"><span class="nav-number">2.</span> <span class="nav-text">exact-active-class</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#exact"><span class="nav-number">3.</span> <span class="nav-text">exact</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#路由精确匹配"><span class="nav-number">4.</span> <span class="nav-text">路由精确匹配</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#情景再现"><span class="nav-number">1.</span> <span class="nav-text">情景再现</span></a></li></ol></div>
             
 
           </div>
